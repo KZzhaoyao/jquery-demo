@@ -1,0 +1,106 @@
+<! DOCTYPE html>
+<html class="">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>  
+    jquery-训练-Powered By 不二 </title>
+  <meta name="keywords" content="我是keywords">
+  <meta name="description" content=""> 
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <script src="../js/jquery.js"></script>  
+  <script src="../js/bootstrap.js"></script>          
+</head>
+<style>
+  
+</style>
+<script>
+  $(function(){
+//	$(".emoticon p span:first").hide();
+//	$(".emoticon p span").first().hide();	
+//	$(".emoticon div div div").hide();  
+//	$(".emoticon").prev().hide();
+//	$("input[name = '_username']").siblings().hide();
+//	$("input[name = '_password']").parents("form").children(".form-group").hide();
+
+
+})
+</script>
+<body style="padding-bottom: 200px;">
+<div class="alert alert-info">选择器（Dom）  学习网址:  <a href="http://www.shifone.cc/all.html">http://www.shifone.cc/all.html</a>
+</div>
+<div class="alert alert-success ">
+  <h2 class="">考试须知,节点外的知识点参照</h2>
+  <ol>
+    <li>本次考试不允许自己添加id和class类</li>
+    <li>尽量使用id值选取</li>
+    <li>不选取通用的class类作为选择器</li>
+    <li>多次操作相同的dom节点时,请通过变量保存dom对象 </li>
+    <li>使用高效的选择器,减少选择器的使用</li>
+    <li>良好的变量名命名  $###</li>
+    <li>隐藏div 使用  $("###").hide()</li>
+    <li>取值 使用  $("###").html()  ; input 节点取值 使用 $("###").val() ; $("###").attr() 可以获得任意节点的属性值</li>
+    <li>优雅的使用链式写法</li>
+  </ol>
+</div>
+<div class="alert alert-danger">
+  <h2 class="">测试题目 ,写出符合生产环境下的代码</h2>
+  <ul>
+    <li>1. 隐藏 class类 emoticon 以第一个 '嘿嘿' 和 '哈哈'</li>
+    <li>2. 隐藏class类 emoticon 第三个div </li>
+    <li>3. 隐藏class类 emoticon 上个同胞节点 </li>
+    <li>4. 获得meta name为'keywords' 的值</li>
+    <li>5. 找到 input name 值为 '_username' 的同胞节点 </li>
+    <li>6. 找到 input name 值为 '_password' 的父节点  form元素</li>
+    <li>7. 根据7找到的form元素 找到 子元素 有 class 'form-group' 的节点</li>
+  </ul>
+</div>
+<div class="clearfix ">
+<form id="login-form" class="form-vertical col-md-4" method="post" action="/login_check" novalidate="novalidate" data-widget-cid="widget-6">  
+        <div class="form-group">
+          <label class="control-label" for="login_username">帐号</label>
+          <div class="controls">
+              <input class="form-control" id="login_username" type="text" name="_username" value="" required="" placeholder="邮箱/手机/用户名" data-widget-cid="widget-7" data-explain="">
+              <input class="form-control"  type="text"  value="同胞元素" required="" >
+              <p>同胞元素</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="login_password">密码</label>
+          <div class="controls">
+            <label class="fa-label">
+              <i class="fa fa-unlock-alt"></i>
+            </label>
+            <input class="form-control" id="login_password" type="password" name="_password" required="" placeholder="密码" data-widget-cid="widget-8" data-explain="">
+         </div>
+        </div>
+        <div class="form-group">
+          <div class="controls">
+              <button class="btn btn-info" id ='login'>登陆</button>
+         </div>
+        </div>
+        <div>
+          <div class="form-group">test</div>
+        </div>
+      </form>
+</div>
+<div class="emoticon">
+    <p class="spacial-label"><span class="label label-default">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span><span class="label label-success">哈哈</span></p>
+    <div class="">
+        我是第一层div
+        <div class="">
+            我是第二层div
+            <div>我是第三层</div>
+        </div>
+    </div>
+    <div>
+      我是第一层div
+    </div>
+     <div>
+      我是第一层div
+    </div>
+    <div>
+      我是第一层div
+    </div>   
+</div>
+</body>
+</html>
